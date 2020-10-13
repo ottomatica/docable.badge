@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
                             .replace("http://", "docable://")
         res.redirect(referrer);
     }
+    else{
+        res.send("Ok");
+    }
+
 })
 
 app.listen(port, () => {
